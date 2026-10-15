@@ -2,7 +2,13 @@ Identifier: eos531m
 Slug: hlm-half-life
 Status: In progress
 Title: Human Liver Microsome Half-Life (PredHLM)
-Description: "Predicts metabolic half-life in human liver microsomes from a SMILES, as log10 minutes and minutes, plus the spread of a five-model XGBoost ensemble on RDKit 2D descriptors and an applicability-domain score against the training set. Trained on 11,790 compounds from in-house Korea Chemical Bank assays and ChEMBL (test RMSE 0.507, R2 0.43). Phase I metabolism only, not prospectively validated; a decision-support tool, not a replacement for the assay."
+Description: Predicts metabolic half-life in human liver microsomes from a 
+  SMILES, as log10 minutes and minutes, plus the spread of a five-model XGBoost 
+  ensemble on RDKit 2D descriptors and an applicability-domain score against the
+  training set. Trained on 11,790 compounds from in-house Korea Chemical Bank 
+  assays and ChEMBL (test RMSE 0.507, R2 0.43). Phase I metabolism only, not 
+  prospectively validated; a decision-support tool, not a replacement for the 
+  assay.
 Deployment:
   - Local
 Source: Local
@@ -16,7 +22,8 @@ Output:
   - Value
 Output Dimension: 4
 Output Consistency: Fixed
-Interpretation: Predicted human liver microsome half-life as log10 minutes and minutes, with ensemble spread and training-set similarity score.
+Interpretation: Predicted human liver microsome half-life as log10 minutes and 
+  minutes, with ensemble spread and training-set similarity score.
 Tag:
   - Half-life
   - Microsomal stability
@@ -31,3 +38,4 @@ Publication: https://doi.org/10.64898/2026.07.02.736062
 Source Code: https://github.com/joshua-416/PredHLM
 License: MIT
 Contributor: TiagoJanela
+Incorporation Date: '2026-10-15'
