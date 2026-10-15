@@ -1,6 +1,6 @@
 Identifier: eos531m
 Slug: hlm-half-life
-Status: In progress
+Status: Ready
 Title: Human Liver Microsome Half-Life (PredHLM)
 Description: Predicts metabolic half-life in human liver microsomes from a 
   SMILES, as log10 minutes and minutes, plus the spread of a five-model XGBoost 
@@ -39,6 +39,18 @@ Source Code: https://github.com/joshua-416/PredHLM
 License: MIT
 Contributor: TiagoJanela
 Incorporation Date: '2026-10-15'
+Last Packaging Date: '2026-10-15'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos531m.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos531m
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 34.0
 Environment Size: 1506.0
+Image Size: 1605.16
+Computational Performance 1: 33.04
+Computational Performance 2: 18.84
+Computational Performance 3: 19.58
+Computational Performance 4: 43.2
+Computational Performance 5: 156.02
