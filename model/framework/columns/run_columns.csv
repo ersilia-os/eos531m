@@ -1,1 +1,5 @@
 name,type,direction,description
+pred_log10_half_life,float,high,Predicted log10 metabolic half-life (minutes) in human liver microsomes (ensemble mean of 5 XGBoost models)
+pred_std,float,,Standard deviation of the 5 fold-model predictions in log10 units (uncertainty)
+pred_half_life_min,float,high,Predicted metabolic half-life in human liver microsomes in minutes (10 to the power of the log10 prediction)
+sdc,float,high,Applicability-domain score (sum of distance-weighted contributions from ECFP4-similar training compounds); higher means better supported by the training set

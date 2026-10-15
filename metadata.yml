@@ -2,42 +2,30 @@ Identifier: eos531m
 Slug: hlm-half-life
 Status: In progress
 Title: Human Liver Microsome Half-Life (PredHLM)
-Description: Predicts the metabolic half-life of a small molecule in human liver
-  microsomes from its SMILES. An ensemble of five XGBoost models on RDKit 
-  descriptors returns the log10 half-life in minutes, the half-life itself, the 
-  spread across the five models as an uncertainty estimate, and a 
-  similarity-based applicability-domain score.
+Description: "Predicts metabolic half-life in human liver microsomes from a SMILES, as log10 minutes and minutes, plus the spread of a five-model XGBoost ensemble on RDKit 2D descriptors and an applicability-domain score against the training set. Trained on 11,790 compounds from in-house Korea Chemical Bank assays and ChEMBL (test RMSE 0.507, R2 0.43). Phase I metabolism only, not prospectively validated; a decision-support tool, not a replacement for the assay."
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Property calculation or prediction
 Input:
   - Compound
 Input Dimension: 1
 Output:
   - Value
-  - Score
-  - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Dimension: 4
+Output Consistency: Fixed
+Interpretation: Predicted human liver microsome half-life as log10 minutes and minutes, with ensemble spread and training-set similarity score.
 Tag:
   - Half-life
   - Microsomal stability
   - ADME
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - ADMET
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Homo sapiens
+Publication Type: Preprint
 Publication Year: 2026
 Publication: https://doi.org/10.64898/2026.07.02.736062
 Source Code: https://github.com/joshua-416/PredHLM
