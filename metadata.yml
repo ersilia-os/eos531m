@@ -46,6 +46,7 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos531m
 Docker Architecture:
   - AMD64
   - ARM64
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos531m_v1.sif
 Model Size: 34.0
 Environment Size: 1506.0
 Image Size: 1605.16
