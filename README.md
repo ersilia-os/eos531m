@@ -2,7 +2,8 @@
 
 Predicts metabolic half-life in human liver microsomes from a SMILES, as log10 minutes and minutes, plus the spread of a five-model XGBoost ensemble on RDKit 2D descriptors and an applicability-domain score against the training set. Trained on 11,790 compounds from in-house Korea Chemical Bank assays and ChEMBL (test RMSE 0.507, R2 0.43). Phase I metabolism only, not prospectively validated; a decision-support tool, not a replacement for the assay.
 
-This model was incorporated on 2026-10-15.Last packaged on 2026-10-15.
+This model was incorporated on 2026-10-15.
+Last packaged on 2026-10-15.
 
 ## Information
 ### Identifiers
@@ -40,6 +41,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos531m](https://hub.docker.com/r/ersiliaos/eos531m)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos531m.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos531m.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos531m_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos531m_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `34`
